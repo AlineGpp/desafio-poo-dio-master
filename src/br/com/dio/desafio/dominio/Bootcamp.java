@@ -55,11 +55,6 @@ public class Bootcamp {
         this.conteudos = conteudos;
     }
 
-    public void cursosDisponiveis(Instrutor instrutor) {
-        System.out.println("Cursos disponíveis do instrutor: " + instrutor.getNomeInstrutor());
-        instrutor.getCursosMinistrados().forEach(System.out::println);
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

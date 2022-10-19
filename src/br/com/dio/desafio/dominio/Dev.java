@@ -22,6 +22,11 @@ public class Dev {
         }
     }
 
+    public void cursosDisponiveis(Instrutor instrutor) {
+        System.out.println("Cursos disponíveis do instrutor: " + instrutor.getNomeInstrutor());
+        instrutor.getCursosMinistrados().forEach(System.out::println);
+    }
+
     public double calcularTotalXp() {
         Iterator<Conteudo> iterator = this.conteudosConcluidos.iterator();
         double soma = 0;
